@@ -1,0 +1,3 @@
+# A constituency-based parse tree represents the syntactic structure of a sentence by breaking it down
+# into constituent phrases. Each node in the tree represents a phrase, and its children represent its
+# constituents. Here are the constituency-based parse trees for the given phrases:

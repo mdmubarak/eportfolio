@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Constituency-Based Parse Tree</title>
+  <style>
+    .tree {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+
+    .node {
+      display: inline-block;
+      margin: 5px;
+    }
+
+    .label {
+      background-color: #f2f2f2;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tree" id="tree1">
+    <!-- Parse tree for "The government raised interest rates." -->
+    <div class="node">
+      <div class="label">S</div>
+      <div class="node">
+        <div class="label">NP</div>
+        <div class="node">
+          <div class="label">DT</div>
+          <div class="node">The</div>
+        </div>
+        <div class="node">
+          <div class="label">NN</div>
+          <div class="node">government</div>
+        </div>
+      </div>
+      <div class="node">
+        <div class="label">VP</div>
+        <div class="node">
+          <div class="label">VBD</div>
+          <div class="node">raised</div>
+        </div>
+        <div class="node">
+          <div class="label">NP</div>
+          <div class="node">
+            <div class="label">NN</div>
+            <div class="node">interest</div>
+          </div>
+          <div class="node">
+            <div class="label">NNS</div>
+            <div class="node">rates</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tree" id="tree2">
+    <!-- Parse tree for "The internet gives everyone a voice." -->
+    <!-- Add the parse tree structure here -->
+  </div>
+
+  <div class="tree" id="tree3">
+    <!-- Parse tree for "The man saw the dog with the telescope." -->
+    <!-- Add the parse tree structure here -->
+  </div>
+
+  <script>
+    // Add JavaScript functionality if needed
+  </script>
+</body>
+
+</html>
