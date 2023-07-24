@@ -1,0 +1,91 @@
+# A constituency-based parse tree represents the syntactic structure of a sentence by breaking it down
+# into constituent phrases. Each node in the tree represents a phrase, and its children represent its
+# constituents. Here are the constituency-based parse trees for the given phrases:
+
+
+# 1. The government raised interest rates.
+
+                      Sentence
+                         |
+                         |
+             +-----------+--------------+
+             |                          |
+            NP                        VP
+             |                          |
+             |                          |
+     +-------+------+              +----+-------+
+     |              |              |            |
+    Det            Noun           Verb       NP
+     |              |              |            |
+     |              |              |            |
+     |              |              |            |
+     |             government      |            |
+     |                            raised        |
+     |                                          |
+    The                                    interest rates
+
+
+# 2. The internet gives everyone a voice.
+
+                      Sentence
+                         |
+                         |
+             +-----------+--------------+
+             |                          |
+            NP                        VP
+             |                          |
+             |                          |
+     +-------+------+              +----+-------+
+     |              |              |            |
+    Det            Noun           Verb       NP
+     |              |              |            |
+     |              |              |            |
+     |              |              |            |
+     |            internet        gives         |
+     |                                          |
+    The                                   everyone a voice
+
+
+# 3. The man saw the dog with the telescope.
+
+                      Sentence
+                         |
+                         |
+             +-----------+--------------+
+             |                          |
+            NP                        VP
+             |                          |
+             |                          |
+     +-------+------+              +----+-------+
+     |              |              |            |
+    Det            Noun           Verb       NP
+     |              |              |            |
+     |              |              |            |
+     |              |              |            |
+     |             man            saw           |
+     |                                          |
+    The                              +---------+---------+
+                                    |                   |
+                                    |                  NP
+                                    |                   |
+                                    |                   |
+                                    |                +--+----+
+                                    |                |       |
+                                    |               Det     Noun
+                                    |                |       |
+                                    |                |       |
+                                    |              the     telescope
+                                    |
+                                    |
+                                 +--+----+
+                                 |       |
+                                Det     Noun
+                                 |       |
+                                 |       |
+                                the     dog
+
+
+# In the constituency-based parse trees above, the nodes labeled NP represent noun phrases,
+# VP represent verb phrases, Det represents determiners, Noun represents nouns, and Verb represents verbs.
+# The parse trees break down each sentence into its constituent phrases and provide a clear representation
+# of their syntactic structure.
