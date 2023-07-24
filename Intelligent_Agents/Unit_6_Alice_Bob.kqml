@@ -1,0 +1,71 @@
+(:tell
+  :content
+  "Hello Bob! I am Agent Alice, and I am in need of some stock. Could you please tell me the available stock of 50 inch televisions?"
+)
+
+(:ask
+  :content
+  "Hello Alice! I am Agent Bob, the warehouse manager. Sure, let me check the stock levels for 50 inch televisions. Please wait a moment while I retrieve the information."
+  :receiver
+  "Alice"
+  :language
+  "KIF"
+  :ontology
+  "stock_query"
+  :performative
+  "request"
+  :reply-with
+  "stock_query_1"
+  :reply-by
+  "2023-07-23T12:00:00"
+  :context
+  "stock_context"
+  :content
+  (and (has-item ?item) (item-type ?item "television") (television-size ?item 50))
+)
+
+
+(:ask
+  :content
+  "Thank you, Bob! While you're at it, could you also tell me how many HDMI slots the 50 inch televisions have?"
+  :receiver
+  "Bob"
+  :language
+  "KIF"
+  :ontology
+  "stock_query"
+  :performative
+  "request"
+  :in-reply-to
+  "stock_query_1"
+  :reply-by
+  "2023-07-23T12:00:00"
+  :context
+  "stock_context"
+  :content
+  (and (has-item ?item) (item-type ?item "television") (television-size ?item 50) (has-hdmi-slots ?item ?slots))
+)
+
+
+(:tell
+  :content
+  "Certainly, Alice! I have checked the stock, and we currently have 20 units of 50 inch televisions available. Each television has 3 HDMI slots."
+  :receiver
+  "Alice"
+  :language
+  "KIF"
+  :ontology
+  "stock_query"
+  :performative
+  "inform"
+  :in-reply-to
+  "stock_query_1"
+  :reply-by
+  "2023-07-23T12:00:00"
+  :context
+  "stock_context"
+  :content
+  (and (has-item ?item) (item-type ?item "television") (television-size ?item 50) (has-hdmi-slots ?item 3))
+)
+
+
